@@ -57,5 +57,31 @@ public class MinAndMaxMethods {
         System.out.println("Max is " + Math.max(34.2, 12.5));
         System.out.println("Max is " + Math.max(-14, -32));
         System.out.println("Max is " + Math.max(Math.max(17, 49), 125));
+
+        /*
+        Find the min value of the given numbers and print them
+        * 6, 9
+        * 17, 49
+        * 34.2, 12.5
+        * -14, -32
+        * 17, 49, 125
+        * 45, 32, 56, 89
+
+        Expected output:
+        * min is 6
+        * min is 17
+        * min is 12.5
+        * min is -32
+        * min is 17
+        * min is 32
+         */
+
+        System.out.println("min is " + Math.min(6, 9));
+        System.out.println("min is " + Math.min(17, 49));
+        System.out.println("min is " + Math.min(34.2, 12.5));
+        System.out.println("min is " + Math.min(-14, -32));
+        System.out.println("min is " + Math.min(Math.min(17, 49), 125));
+        System.out.println("min is " + Math.min(Math.min(45, 32), Math.min(56, 89)));
+
     }
 }
