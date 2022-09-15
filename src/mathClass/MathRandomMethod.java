@@ -25,6 +25,7 @@ public class MathRandomMethod {
         System.out.println("Random number between 50 to 100 is = " + myRandomBetween50to100);
 
         // Create a random number between 20 - 40 and print it
-
+        int myRandomBetween20and40 = (int)(Math.random() * (40 - 20 + 1) + 20);
+        System.out.println("Random number between 20 to 40 is = " + myRandomBetween20and40);
     }
 }
