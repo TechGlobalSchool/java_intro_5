@@ -25,6 +25,14 @@ public class AbsoluteMethod {
 
         Scanner numberTaker = new Scanner(System.in);
 
+        System.out.println("Please enter an age");
+        int age1 = numberTaker.nextInt();
 
+        System.out.println("Please enter another age");
+        int age2 = numberTaker.nextInt();
+
+        System.out.println("Difference between your ages is = " + Math.abs(age1 - age2));
+        System.out.println("Biggest age is = " + Math.max(age1, age2));
+        System.out.println("Smallest age is = " + Math.min(age1, age2));
     }
 }
