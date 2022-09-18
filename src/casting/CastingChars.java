@@ -28,5 +28,15 @@ public class CastingChars {
         System.out.println("" + (char1 + char2)); // 162
         System.out.println(char1 + char2 + ""); // 162
         System.out.println(char1 + "" + char2); // Aa
+
+
+        char c = 'A';
+        int i = c;
+        System.out.println(i);
+
+        int n = 97;
+        char cc = (char)n;
+
+        System.out.println(cc); // a
     }
 }
