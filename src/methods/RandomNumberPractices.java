@@ -26,6 +26,5 @@ public class RandomNumberPractices {
         System.out.println("Number 5 = " + r5);
 
         System.out.println("The average is  = " + (r1 + r2 + r3 + r4 + r5) / 5);
-
     }
 }
