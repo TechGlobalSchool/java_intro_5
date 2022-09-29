@@ -4,19 +4,12 @@ public class StudentSelector {
     public static void main(String[] args) {
         String[] students = {
                 "Abdallah",
-                "Abdul R.",
-                "Ahmet A.",
-                "Ahmet K.",
                 "Aileen",
-                "Aika",
                 "Alex",
-                "Alexis",
                 "Ali",
-                "Alma",
                 "Amal",
                 "Anastasiya",
                 "Anatolii",
-                "Andre",
                 "Andrii",
                 "Ashraf",
                 "Ayah",
@@ -24,10 +17,7 @@ public class StudentSelector {
                 "Bashar",
                 "Beyza",
                 "Branko",
-                "Burim",
                 "Christina",
-                "Dwayne",
-                "Emily",
                 "Engin",
                 "Eren",
                 "Erkan",
@@ -38,20 +28,13 @@ public class StudentSelector {
                 "Ibrahim E.",
                 "Ibrahim O.",
                 "Ibrahim T.",
-                "Ipek",
                 "Islomjon",
                 "Jeremiah",
-                "Kyial",
                 "Malek",
-                "Marko",
                 "Mehmet",
                 "Merve",
                 "Mihail",
-                "Milena",
-                "Mohammad",
-                "Mouayed",
                 "Newer",
-                "Nuriia",
                 "Olena",
                 "Othman",
                 "Ozan",
@@ -59,13 +42,9 @@ public class StudentSelector {
                 "Pinar",
                 "Regina",
                 "Saeed",
-                "Saltanat",
                 "Samir",
-                "Selda",
                 "Seyma",
-                "Seymur",
                 "Suzanne",
-                "Tamara",
                 "Valentyna",
                 "Viktoriya L.",
                 "Viktoriia M.",
@@ -76,6 +55,6 @@ public class StudentSelector {
                 "Yousef"
         };
 
-        System.out.println("The lucky student is = " + students[(int) (Math.random() * 71)].toUpperCase());
+        System.out.println("The lucky student is = " + students[(int) (Math.random() * students.length)].toUpperCase());
     }
 }
