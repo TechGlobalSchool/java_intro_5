@@ -40,4 +40,9 @@ public class ScannerHelper {
 
         return address;
     }
+
+    public static String getAString(){
+        System.out.println("Please enter a String");
+        return input.nextLine();
+    }
 }
