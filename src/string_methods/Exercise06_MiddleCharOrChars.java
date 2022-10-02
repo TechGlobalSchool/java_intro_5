@@ -24,7 +24,7 @@ public class Exercise06_MiddleCharOrChars {
 
         String name = ScannerHelper.getAName();
 
-        if(name.trim().length() == 0){
+        if(name.trim().isEmpty()){
             System.out.println("You did not enter a name");
         }
         else{
