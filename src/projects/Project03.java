@@ -103,6 +103,14 @@ public class Project03 {
         } else System.out.println("Invalid character detected!!!");
 
         // Task 5 //
+        /*
+        Assume you are given a single character. (It will be hard-coded)
+        -First, check if given char is a letter but not digit or special character.
+        -If it is not a letter, then print “Invalid character detected!!!”.
+        -If it is a letter, then find out whether it is a vowel or a consonant.
+        -If the letter is vowel, then print “The letter is vowel”, else print “The letter is
+        consonant”.
+         */
         System.out.println("\n***** TASK 5 *****");
         char c2 = 'e';
 
@@ -115,5 +123,41 @@ public class Project03 {
                 System.out.println("The letter is vowel");
             } else System.out.println("The letter is consonant");
         } else System.out.println("Invalid character detected!!!");
+
+        /*
+        Task 6
+        Assume you are given a single character. (It will be hard-coded)
+        -First, check if the given char is a special character but not a digit or not a letter.
+        -If it is not a special character, then print “Invalid character detected!!!”.
+        -If it is a special character, then print “Special character is =
+        {givenCharacter}”.
+         */
+        System.out.println("\n***** TASK 6 *****");
+        char character1 = '#';
+
+        boolean isLetter = (character1 >= 65 && character1 <= 90) || (character1 >= 97 && character1 <= 122);
+        boolean isDigit = character1 >= 48 && character1 <= 57;
+
+        if (isLetter || isDigit) System.out.println("Invalid character detected!!!");
+        else System.out.println("Special character is = " + character1);
+
+        /*
+        TASK-7 (Find if given char is a letter or digit or special character)
+        -Assume you are given a single character. (It will be hard-coded)
+        -If given char is a letter, then print “Character is a letter”
+        -If given char is a digit, then print “Character is a digit”
+        -Otherwise, print “Character is a special character”
+         */
+        System.out.println("\n***** TASK 7 *****");
+        char charT7 = '#';
+
+        isLetter = (charT7 >= 65 && charT7 <= 90) || (charT7 >= 97 && charT7 <= 122);
+        isDigit = charT7 >= 48 && charT7 <= 57;
+
+        if (isLetter) System.out.println("Character is a letter"); // single bit of code doesn't require { }
+        else if (isDigit) {
+            System.out.println("Character is a digit");
+        }
+        else System.out.println("Character is a special character");
     }
 }
