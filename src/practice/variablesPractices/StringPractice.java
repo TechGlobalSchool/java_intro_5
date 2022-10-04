@@ -1,4 +1,4 @@
-package practice;
+package practice.variablesPractices;
 
 public class StringPractice {
     public static void main(String[] args) {
