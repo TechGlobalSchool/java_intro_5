@@ -45,4 +45,15 @@ public class ScannerHelper {
         System.out.println("Please enter a String");
         return input.nextLine();
     }
+
+    /*
+    Create a method that asks user to enter 4 favorite colors and RETURN it
+     */
+
+    public static String getFavColors(){
+        System.out.println("Please enter 4 of your favorite colors");
+        String favColors = input.nextLine();
+
+        return favColors;
+    }
 }
