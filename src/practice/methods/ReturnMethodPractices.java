@@ -9,7 +9,6 @@ public class ReturnMethodPractices {
         System.out.println(ReturnMethodPractices.findDifference(99.23, 23.99));
         System.out.println(ReturnMethodPractices.findDifference(6.12, 12.76));
         System.out.println(ReturnMethodPractices.findDifference(9.63, 43.1));
-        ReturnMethodPractices.
 
     }
     /*
