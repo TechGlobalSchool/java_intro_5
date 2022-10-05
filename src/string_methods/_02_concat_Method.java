@@ -15,5 +15,6 @@ public class _02_concat_Method {
         String str3 = str1.concat(str2);
 
         System.out.println(str3); // TechGlobal
+
     }
 }
