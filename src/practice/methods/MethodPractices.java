@@ -11,9 +11,15 @@ public class MethodPractices {
 //        System.out.println();
 //        printStringDesc("Scrpt");
 
-        MethodPractices.printMiddle("toyota"); // yo
-        MethodPractices.printMiddle("civic"); // v
-        MethodPractices.printMiddle("ci"); // Length is less than 3"
+//        MethodPractices.printMiddle("toyota"); // yo
+//        MethodPractices.printMiddle("civic"); // v
+//        MethodPractices.printMiddle("ci"); // Length is less than 3"
+        System.out.println("Java:");
+        MethodPractices.printFirstLastMiddle("Java");
+        System.out.println("J:");
+        MethodPractices.printFirstLastMiddle("J");
+        System.out.println("JavaScript:");
+        MethodPractices.printFirstLastMiddle("JavaScript");
     }
 
     /*
@@ -76,6 +82,23 @@ public class MethodPractices {
             System.out.println(str.length() % 2 == 0 ?
                     str.substring(str.length() / 2 - 1, str.length() / 2 + 1) :
                     str.charAt(str.length() / 2));
+        }
+    }
+
+    public static void printFirstLastMiddle(String input) {
+        if (input.length() < 4) {
+            System.out.println("INVALID INPUT");
+        } else {
+            /*
+            First 2 characters are = Ja
+            Last 2 characters are = va
+            The other characters are =
+             */
+            System.out.println(
+                    "First 2 characters are = " + input.substring(0, 2) +
+                            "\nLast 2 characters are = " + input.substring(input.length() - 2) +
+                            "\nThe other characters are = " + input.substring(2, input.length() - 2)
+            );
         }
     }
 }
