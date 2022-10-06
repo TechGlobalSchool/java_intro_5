@@ -14,12 +14,16 @@ public class MethodPractices {
 //        MethodPractices.printMiddle("toyota"); // yo
 //        MethodPractices.printMiddle("civic"); // v
 //        MethodPractices.printMiddle("ci"); // Length is less than 3"
-        System.out.println("Java:");
-        MethodPractices.printFirstLastMiddle("Java");
-        System.out.println("J:");
-        MethodPractices.printFirstLastMiddle("J");
-        System.out.println("JavaScript:");
-        MethodPractices.printFirstLastMiddle("JavaScript");
+//        System.out.println("Java:");
+//        MethodPractices.printFirstLastMiddle("Java");
+//        System.out.println("J:");
+//        MethodPractices.printFirstLastMiddle("J");
+//        System.out.println("JavaScript:");
+//        MethodPractices.printFirstLastMiddle("JavaScript");
+
+        MethodPractices.printIsFirstLastTwoSame("xyxy"); // true
+        MethodPractices.printIsFirstLastTwoSame("abcdef"); // false
+        MethodPractices.printIsFirstLastTwoSame("a"); // Length is less than 2
     }
 
     /*
@@ -100,5 +104,20 @@ public class MethodPractices {
                             "\nThe other characters are = " + input.substring(2, input.length() - 2)
             );
         }
+    }
+
+    public static void printIsFirstLastTwoSame(String word){
+//        if (word.length() < 2){
+//            System.out.println("Length is less than 2");
+//        }else{
+//            System.out.println(word.substring(0, 2).equals(word.substring(word.length() - 2)));
+//        }
+        // condition ? option if its true : option 2 if its false
+        System.out.println(
+                word.length() < 2 ?
+                        "Length is less than 2" :
+                        word.substring(0, 2).equals(word.substring(word.length() - 2))
+        );
+
     }
 }
