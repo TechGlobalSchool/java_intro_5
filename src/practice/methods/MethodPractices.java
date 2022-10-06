@@ -66,11 +66,16 @@ public class MethodPractices {
             if the length is even get the middle 2 chars
             else get the middle char
              */
-            if (str.length() % 2 == 0) { // toyota -> yo - 2,3 == length 6  | length /2 - 1 = 2
-                System.out.println(str.substring(str.length() / 2 - 1, str.length() / 2 + 1)); // 2, 4
-            } else { // civic -> v - 2 == length 5  | length /2 = 2
-                System.out.println(str.charAt(str.length() / 2));
-            }
+//            if (str.length() % 2 == 0) { // toyota -> yo - 2,3 == length 6  | length /2 - 1 = 2
+//                System.out.println(str.substring(str.length() / 2 - 1, str.length() / 2 + 1)); // 2, 4
+//            } else { // civic -> v - 2 == length 5  | length /2 = 2
+//                System.out.println(str.charAt(str.length() / 2));
+//            }
+
+            // conditon ? option if its true : option 2 if its false
+            System.out.println(str.length() % 2 == 0 ?
+                    str.substring(str.length() / 2 - 1, str.length() / 2 + 1) :
+                    str.charAt(str.length() / 2));
         }
     }
 }
