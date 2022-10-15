@@ -56,4 +56,12 @@ public class ScannerHelper {
 
         return favColors;
     }
+
+    public static int getANumber(){
+        System.out.println("Please enter a number:");
+        int num = input.nextInt();
+        input.nextLine();
+
+        return num;
+    }
 }
