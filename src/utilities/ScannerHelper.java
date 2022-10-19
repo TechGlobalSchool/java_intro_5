@@ -64,4 +64,11 @@ public class ScannerHelper {
 
         return num;
     }
+
+    public static String getAFullName(){
+        System.out.println("Please enter a full name:");
+        String fullName = input.nextLine();
+
+        return fullName;
+    }
 }
