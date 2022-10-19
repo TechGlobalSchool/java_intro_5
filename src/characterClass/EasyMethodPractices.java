@@ -3,7 +3,9 @@ package characterClass;
 public class EasyMethodPractices {
     public static void main(String[] args) {
         String s1 = "2860 south river road des plaines il";
-        System.out.println("String: \"" + s1 + "\" has " + countLetters(s1) + " letters");
+        String s2 = "12334 @!#$!@ TechGlobal";
+        System.out.println("String: \"" + s1 + "\" has: \n" + countLetters(s1) + " letters");
+        System.out.println("String: \"" + s2 + "\" has: \n" + countLetters(s2) + " letters");
     }
 
     /*
@@ -21,4 +23,12 @@ public class EasyMethodPractices {
         }
         return counter;
     }
+
+    /*
+    Create a public static method named as countUpperCases() which will take a String
+    and counts the upper case letters then returns it
+     */
+    //"12334 @!#$!@ TechGlobal" -> 2
+    //"TeChGloBal" -> 4
+    //"123123 TeChGloBal #$%#$%" -> 4
 }
