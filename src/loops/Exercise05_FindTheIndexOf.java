@@ -24,14 +24,28 @@ public class Exercise05_FindTheIndexOf {
 //        System.out.println("3. " + clearWord("I love Java", "Jav"));
 //        System.out.println("4. " + clearWord("Banana", "an"));
 //        System.out.println("5. " + clearWord("Banana", "banananananna"));
+//
+//        System.out.println(frontAndBack("abcxxxxabc"));
+//        System.out.println(frontAndBack("abxxxxab"));
+//        System.out.println(frontAndBack("axxxa"));
+//        System.out.println(frontAndBack("wordxxxxword"));
+//        System.out.println(frontAndBack("1lj2n5khbg"));
 
-        System.out.println(frontAndBack("abcxxxxabc"));
-        System.out.println(frontAndBack("abxxxxab"));
-        System.out.println(frontAndBack("axxxa"));
-        System.out.println(frontAndBack("wordxxxxword"));
-        System.out.println(frontAndBack("1lj2n5khbg"));
-
-
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println("First loop iteration = " + i);
+//            for (int j = 0; j < 3; j++) {
+//                System.out.println("Second loop iteration = " + j);
+//            }
+//            System.out.println();
+//        }
+/*
+        "I love Java" ->  'v'
+        "Banana" -> 'a'
+        "Python"> 'P'
+ */
+        System.out.println(mostRepeatedChar("I love Java"));
+        System.out.println(mostRepeatedChar("Banana"));
+        System.out.println(mostRepeatedChar("Python"));
     }
 
     /*
@@ -167,12 +181,57 @@ public class Exercise05_FindTheIndexOf {
     /*
     Create a public static method named as mostRepeatedChar() and it will take a String,
     then it will return the most repeated letter from String. If there is same amount of repetation
-    return the first one. Hint: use a String container
+    return the first one. Hint: use a String container, Hint 2: use nested loop
 
     Example:
 
-    "I love Java" ->  "v"
-    "Banana" -> "a"
-    "Python"> "P"
+    "I love Java" ->  'v'
+    "Banana" -> 'a'
+    "Python"> 'P'
      */
+
+    public static char mostRepeatedChar(String s){
+        /*
+        1. container        +
+        2. fori loop -> check every single letter +
+        3. if the current char has the bigger repetition update the container
+        4. return container
+         */
+        //Banana -> 'B'
+        // mostRepeated -> 'a'
+        // mostAmountOfRepetition -> 3
+
+        char mostRepeated = ' ';
+        int mostAmountOfRepetition = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isWhitespace(s.charAt(i))) continue;
+
+            if (countChar(s, s.charAt(i)) > mostAmountOfRepetition){
+//               mostRepeated = 'B';
+//                mostAmountOfRepetition = 1;
+//                mostRepeated = 'a';
+//                mostAmountOfRepetition = 3;
+                mostRepeated = s.charAt(i);
+                mostAmountOfRepetition = countChar(s, s.charAt(i));
+            }
+        }
+
+        return mostRepeated;
+    }
+
+
+
+    // supporting count char method it will take a String , and a char then it will return the
+    // number of occurrence of that char
+
+    public static int countChar(String s, char c){
+        int counter = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == c) counter++;
+        }
+
+        return counter;
+    }
 }
