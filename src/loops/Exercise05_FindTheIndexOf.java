@@ -19,11 +19,17 @@ public class Exercise05_FindTheIndexOf {
 //        System.out.println("2. " + clearChar("Banana", 'a'));
 //        System.out.println("3. " + clearChar("Banana", 't'));
 
-        System.out.println("1. " + clearWord("I love Java", "av"));
-        System.out.println("2. " + clearWord("I love Java", "ava"));
-        System.out.println("3. " + clearWord("I love Java", "Jav"));
-        System.out.println("4. " + clearWord("Banana", "an"));
-        System.out.println("5. " + clearWord("Banana", "banananananna"));
+//        System.out.println("1. " + clearWord("I love Java", "av"));
+//        System.out.println("2. " + clearWord("I love Java", "ava"));
+//        System.out.println("3. " + clearWord("I love Java", "Jav"));
+//        System.out.println("4. " + clearWord("Banana", "an"));
+//        System.out.println("5. " + clearWord("Banana", "banananananna"));
+
+        System.out.println(frontAndBack("abcxxxxabc"));
+        System.out.println(frontAndBack("abxxxxab"));
+        System.out.println(frontAndBack("axxxa"));
+        System.out.println(frontAndBack("wordxxxxword"));
+        System.out.println(frontAndBack("1lj2n5khbg"));
 
 
     }
@@ -122,4 +128,51 @@ public class Exercise05_FindTheIndexOf {
 
         return newS;
     }
+
+    /*
+    Create a public static method named as frontAndBack() and it will take a String,
+    then it will return a String which has the most common words from start and end.
+
+    Examples:
+
+    "abcxxxabc" -> "abc"
+    "abxxxab" -> "ab"
+    "abxxxxab" -> "ab"
+    "axxxa" -> "a"
+    "wordxxxword" -> "word"
+     */
+
+    public static String frontAndBack(String s){
+        /*
+        1. Create container
+        2. Create a fori loop (0, s.length/ 2 )
+        3. get the substring and check if it is ending with. If it is ending update the container.
+
+        "abxxxab" -> "a", "b" = "": "ab", "ab"= "ab": "abx", "xab" = "":
+        "wordxxxword" -> "w", "d" = "": ,..., "word", "word" = "word": "wordx", "xword" = ""
+         */
+        String newS = "";
+
+        for (int i = 0; i < s.length() / 2; i++) {
+            // "abxxxab"
+            // i = 0, 1, 2
+            // s.substring(0, i + 1) --> "a", "ab", "abx"
+            if (s.endsWith(s.substring(0, i + 1))){
+                newS = s.substring(0, i + 1);
+            }
+        }
+        return newS;
+    }
+
+    /*
+    Create a public static method named as mostRepeatedChar() and it will take a String,
+    then it will return the most repeated letter from String. If there is same amount of repetation
+    return the first one. Hint: use a String container
+
+    Example:
+
+    "I love Java" ->  "v"
+    "Banana" -> "a"
+    "Python"> "P"
+     */
 }
