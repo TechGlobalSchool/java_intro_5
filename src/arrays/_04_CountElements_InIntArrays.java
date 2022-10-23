@@ -41,5 +41,31 @@ public class _04_CountElements_InIntArrays {
         }
 
         System.out.println("Positive count is = " + positives);
+
+
+        /*
+        Count how many even numbers you have
+
+        EXPECTED:
+        6
+
+        -1, 3, 0, 5, -7, 10, 8, 0, 10, 0
+         */
+
+        int even1 = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 2 == 0) even1++;
+        }
+
+        System.out.println(even1);
+
+        int even2 = 0;
+
+        for(int number : numbers){
+            if(number % 2 == 0) even2++;
+        }
+
+        System.out.println(even2);
     }
 }
