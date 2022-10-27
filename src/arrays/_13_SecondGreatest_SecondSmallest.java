@@ -8,6 +8,8 @@ public class _13_SecondGreatest_SecondSmallest {
     public static void main(String[] args) {
         int[] numbers = {2, 3, 7, 1, 1, 7};
         printMaxMinSecondMaxAndMin(numbers);
+
+
     }
 
     /*
