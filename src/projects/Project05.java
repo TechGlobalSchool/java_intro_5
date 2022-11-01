@@ -80,9 +80,52 @@ public class Project05 {
         System.out.println("Second Greatest = " + secondGreatest);
     }
 
+    /*
+    TASK-5 - findDuplicatedElementsInAnArray() method
+    Write a method that takes a String array. Find all duplicated elements and
+    print them.
+    NOTE: It is case-sensitive!
+     */
+    public static void findDuplicatedElementsInAnArray(String[] list) {
+        String duplicates = "";
+        for (int i = 0; i < list.length; i++) {
+            for (int j = i + 1; j < list.length; j++) {
+                if (!duplicates.contains(list[i]) && list[i].equals(list[j])) {
+                    duplicates += list[i] + " ";
+                    System.out.println(list[i]);
+                    break;
+                }
+            }
+        }
+    }
+
+    /*
+    TASK-6 findMostRepeatedElementInAnArray() method
+    Write a method that takes a String array. Find the most repeated element
+    and print it.
+     */
+    public static void findMostRepeatedElementInAnArray(String[] list) {
+        int index = 0, mostRepeatCounter = 0, counter = 0;
+        for (int i = 0; i < list.length; i++) {
+            for (int j = i + 1; j < list.length; j++) {
+                if (list[i].equals(list[j])) {
+                    counter++;
+                }
+            }
+            if (mostRepeatCounter < counter) {
+                mostRepeatCounter = counter;
+                index = i;
+            }
+            counter = 0;
+        }
+        System.out.println(list[index]);
+    }
+
     public static void main(String[] args) {
         int[] num1And2 = {10, 7, 7, 10, -3, 10, -3};
         int[] num3And4 = {10, 5, 6, 7, 8, 5, 15, 15};
+        String[] string5 = {"foo", "bar", "Foo", "bar", "6", "abc", "6", "xyz"};
+        String[] string6 = {"pen", "eraser", "pencil", "pen", "123", "abc", "pen", "eraser"};
 
         System.out.println("***** Task 1 *****");
         findGreatestAndSmallestWithSort(num1And2);
@@ -95,5 +138,11 @@ public class Project05 {
 
         System.out.println("\n***** Task 4 *****");
         findSecondGreatestAndSmallest(num3And4);
+
+        System.out.println("\n***** Task 5 *****");
+        findDuplicatedElementsInAnArray(string5);
+
+        System.out.println("\n***** Task 6 *****");
+        findMostRepeatedElementInAnArray(string6);
     }
 }

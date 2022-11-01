@@ -164,6 +164,11 @@ public class Project04 {
         Write a Java program that checks any given String and replace bad words
         like “stupid” and “idiot” with “nice” keyword
          */
+        System.out.println("\n***** Task 3 *****");
+        String str3A = "These books are so stupid!";
+        System.out.println(replaceBadWords(str3A));
+
+
 
 
         // Task 2 //
@@ -181,7 +186,7 @@ public class Project04 {
             String lastWord = ans2.substring(ans2.lastIndexOf(" ") + 1);
 
             System.out.println(lastWord
-                    + ans2.substring(ans2.indexOf(" "), ans2.lastIndexOf(" "))
+                    + ans2.substring(ans2.indexOf(" "), ans2.lastIndexOf(" ") + 1)
                     + firstWord);
         } else {
             System.out.println("This sentence does not have 2 or more words to swap");
@@ -195,5 +200,21 @@ public class Project04 {
         Write a program that asks user to enter a String, and swaps first and last 4
         characters of this String and print the modified String
          */
+        System.out.println("\n***** Task 1 *****");
+        System.out.println("Please enter a string:");
+        String ans1 = input.nextLine().trim();
+
+        if (ans1.length() >= 8) {
+            String lastFour = ans1.substring(ans1.length() - 4);
+            String firstFour = ans1.substring(0, 4);
+            String middle = ans1.substring(4,ans1.length() - 4);
+            System.out.println(lastFour + middle + firstFour);
+        } else System.out.println("This string does not have 8 characters!");
+    }
+
+    public static String replaceBadWords(String s) {
+        s = s.replace("stupid", "nice");
+        s = s.replace("idiot", "nice");
+        return s;
     }
 }

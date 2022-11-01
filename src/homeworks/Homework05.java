@@ -39,7 +39,7 @@ public class Homework05 {
         int secNum = 1;
         int nextNum;
 
-        String answer = "0 - 1";
+        String answer = "";
         // 0 - 1 - 1 - 2 - 3 - 5
 
         for (int j = 0; j < givenNum; j++) {
