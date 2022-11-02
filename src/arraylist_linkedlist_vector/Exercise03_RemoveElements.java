@@ -38,7 +38,7 @@ public class Exercise03_RemoveElements {
         */
 
         languages.removeIf(x -> !x.startsWith("C"));
-        System.out.println(languages.size());
+        System.out.println(languages.size()); // 2
 
 
     }
