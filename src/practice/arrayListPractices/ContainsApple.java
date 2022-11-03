@@ -32,8 +32,12 @@ public class ContainsApple {
      */
 
     public static boolean containsApple(ArrayList<String> fruits) {
-        for (String fruit : fruits) {
-            if (fruit.equalsIgnoreCase("apple")) return true;
+//        for (String fruit : fruits) {
+//            if (fruit.equalsIgnoreCase("apple")) return true;
+//        }
+
+        for (int i = 0; i < fruits.size(); i++) {
+            if (fruits.get(i).equalsIgnoreCase("apple"))return true;
         }
         return false;
     }
