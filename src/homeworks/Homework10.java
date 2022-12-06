@@ -12,7 +12,6 @@ public class Homework10 {
         System.out.println(Arrays.toString(sum(new int[]{10, 3, 6, 3, 2}, new int[]{6, 8, 3, 0, 0, 7, 5, 10, 34})));
         System.out.println("\n==========Task08==========\n");
         System.out.println(findClosestTo10(new int[]{10, -13, 5, 70, 15, 57, 10}));
-
     }
     //////////////////Task06/////////////////////
 
