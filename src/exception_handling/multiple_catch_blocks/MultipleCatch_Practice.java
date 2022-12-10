@@ -24,6 +24,5 @@ public class MultipleCatch_Practice {
         }
 
         System.out.println(name + "'s" + " age is " + age + ".");
-
     }
 }
