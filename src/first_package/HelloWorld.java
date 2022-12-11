@@ -1,8 +1,5 @@
 package first_package;
 
-import singleton.Student;
-import utilities.MathHelper;
-
 public class HelloWorld {
     public static void main(String[] args) {
         //Single line Comments
@@ -27,8 +24,6 @@ public class HelloWorld {
         System.out.println("John");
         System.out.println("Doe");
 
-        Student student = Student.getStudent();
-        System.out.println(student); // singleton.Student@1540e19d
     }
 }
 
