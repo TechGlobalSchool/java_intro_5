@@ -1,7 +1,6 @@
 package collections;
 
 import java.util.Arrays;
-import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class Practice03_SubSets {
