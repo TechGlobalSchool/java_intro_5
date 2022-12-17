@@ -1,7 +1,5 @@
 package homeworks;
 
-import com.sun.org.apache.xpath.internal.objects.XString;
-
 import java.util.Arrays;
 
 public class Homework12 {
