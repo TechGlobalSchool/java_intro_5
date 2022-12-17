@@ -31,7 +31,6 @@ public class Practice04_MinMaxValues {
         System.out.println(nthMax(new ArrayList<>(Arrays.asList(100, 100, 100, 100, 100)), 3)); // null
         System.out.println(nthMax(new ArrayList<>(Arrays.asList()), 3)); // null
         System.out.println(nthMax(new ArrayList<>(Arrays.asList(23, 25)), 3)); // null
-
     }
 
 
