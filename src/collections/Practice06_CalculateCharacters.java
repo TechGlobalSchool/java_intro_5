@@ -96,6 +96,4 @@ public class Practice06_CalculateCharacters {
 
         return result;
     }
-
-
 }
