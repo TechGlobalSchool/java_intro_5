@@ -120,7 +120,6 @@ public class Homework15 {
                         dup = arr[i];
                         index = j;
                     }
-
                 }
             }
 
